@@ -15,10 +15,15 @@ body {
   line-height: 1.5;
   height: 100vh;
   position: relative;
+  background: linear-gradient(to top left, #28b487, #7dd56f);
+}
+
+.container {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background: linear-gradient(to top left, #28b487, #7dd56f);
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 .show-modal {
@@ -82,4 +87,26 @@ p {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 5;
+}
+
+.Ahidden {
+  display: none;
+}
+
+@media (max-width: 630px) {
+  .hiddenp {
+    display: none;
+  }
+
+  .Ahidden {
+    display: block;
+  }
+
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    line-height: 1.2;
+  }
 }
